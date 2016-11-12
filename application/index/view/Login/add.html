@@ -1,0 +1,25 @@
+{include file="user/header" /}
+<div class="row" style="margin-top: 100px;">
+	<div class="container">
+		<div class="col-md-4 col-md-offset-4">
+			<form role="form" method="post" class="form" action="{:url('index/login/addHandle')}">
+			    <div class="bs-example">
+				    <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+				    	<div class="form-group">
+						    <label for="inputEmail3" class="control-label">账号</label>
+						    <input type="text" class="form-control"  placeholder="" name="nickname">
+						</div>
+						<div class="form-group">
+						    <label for="inputEmail3" class="control-label">密码</label>
+						    <input type="password" class="form-control"  placeholder="" name="password">
+						</div>
+				      	<input type="hidden" name="__token__" value="{$Request.token}" />
+						<INPUT type="submit" class="btn btn-info" value=" 提交 ">
+				    </div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

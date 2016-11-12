@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>[title]</title>
+	<link rel="stylesheet" type="text/css" href="/public/static/css/bootstrap.css">
+	<script src="/public/static/js/jquery-3.0.0.js"></script>
+	<script src="/public/static/js/bootstrap.js"></script>
+</head>
+<style>
+*{
+  font-family: "华文细黑";
+}
+  .nav-pills{
+    background:#eee;
+    padding: 10px;
+    min-height:600px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width:200px;
+    padding-top: 56px;
+
+  }
+  .nav-pills li{
+    background: #fff;
+    border-radius: 4px;
+    margin:4px 0;
+    text-align: center;
+    border:1px #ccc solid;
+  }
+  .nav-pills li a{
+    color:#000;
+  }
+  .nav-pills li:hover a,.nav-pills li:active a,.nav-pills li:visited a,.nav-pills li:focus a{
+    background: #3071A9 !important;
+    color:#fff;
+  }
+  .nav-pills li a:focus{
+    background: #3071A9 !important;
+    color:#fff;
+  }
+  .navbar-collapse a{
+    float:right;
+    margin-left: 10px;
+  }
+</style>
+<body>
+<ul class="nav nav-pills nav-stacked" role="tablist" style="max-width: 300px;">
+      <li role="presentation"><a href="">浏览文章</a></li>
+      <li role="presentation"><a href="#">发布文章</a></li>
+      <li role="presentation"><a href="#">管理文章</a></li>
+</ul>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">小雷的工作站</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+      <a type="button" class="btn btn-default navbar-btn" href="index/Login/login">登录</a>
+      <a type="button" class="btn btn-default navbar-btn" href="index/Login/add">注册</a>
+      <a type="button" class="btn btn-default navbar-btn" href="index/Login/logout">注销</a>
+    </div>
+  </div>
+</nav>
